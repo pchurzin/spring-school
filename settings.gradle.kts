@@ -12,4 +12,5 @@ dependencyResolutionManagement {
     }
 }
 
+include(":core:ioc-container")
 include(":core:conversion")
