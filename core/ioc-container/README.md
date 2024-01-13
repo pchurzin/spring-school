@@ -19,3 +19,8 @@ By default, `AnnotationConfigApplicationContext` registers `AutowiredAnnotationB
 So does and XmlApplicationContext if there is a `<context:annotation-config/>` applied.
 If there is a jakarta.annotation-api on classpath the CommonAnnotationBeanPostProcessor is registered.
 If there are a jakarta.persistence-api and spring-orm on classpath the PersistenceAnnotationBeanPostProcessor is registered.
+
+## [Placeholders.kt](src/main/kotlin/ru/pchurzin/spring/school/core/container/Placeholders.kt)
+Simple placeholders. If there is no value for placeholder, this placeholder will be passed as is.
+If there is `PropertySourcesPlaceholderConfigurer` in the context then it will be an error.
+*This BFPP should be declared using static method*.
