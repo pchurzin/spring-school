@@ -14,3 +14,4 @@ dependencyResolutionManagement {
 
 include(":core:ioc-container")
 include(":core:conversion")
+include(":core:message-source")
