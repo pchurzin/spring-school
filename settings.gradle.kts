@@ -12,7 +12,8 @@ dependencyResolutionManagement {
     }
 }
 
-include(":core:ioc-container")
 include(":core:conversion")
+include(":core:databind")
+include(":core:ioc-container")
 include(":core:message-source")
 include(":core:resource")
