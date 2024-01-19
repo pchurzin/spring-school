@@ -38,8 +38,7 @@ fun constructorBindingWithErrors() {
     assert(binder.bindingResult.hasErrors())
     val messageSource: MessageSource = ResourceBundleMessageSource().also { it.addBasenames("messages") }
     binder.bindingResult.allErrors.forEach { e ->
-        val m = e?.codes?.firstNotNullOf { messageSource.getMessage(it, null, null, Locale.US) }
-        println(m)
+        println(messageSource.getMessage(e, Locale.US))
     }
 }
 class MapValueResolver(private val map: Map<String, Any>) : DataBinder.ValueResolver {
