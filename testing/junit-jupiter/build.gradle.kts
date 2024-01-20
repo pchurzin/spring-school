@@ -1,6 +1,5 @@
 plugins {
-    kotlin("jvm")
-    id("org.jetbrains.kotlin.plugin.spring")
+    id("ru.pchurzin.spring.school.kotlin")
 }
 
 dependencies {
