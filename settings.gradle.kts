@@ -8,6 +8,7 @@ dependencyResolutionManagement {
     }
 }
 
+include(":aop:timer")
 include(":core:conversion")
 include(":core:databind")
 include(":core:ioc-container")
