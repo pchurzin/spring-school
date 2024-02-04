@@ -9,6 +9,7 @@ dependencyResolutionManagement {
 }
 
 include(":aop:timer")
+include(":boot:app")
 include(":core:conversion")
 include(":core:databind")
 include(":core:ioc-container")

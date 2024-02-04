@@ -1,9 +1,11 @@
 [versions]
 spring-framework = "6.1.3"
+spring-boot = "3.2.2"
 jakarta-ee = "10.0.0"
 junit = "5.10.1"
 
 [libraries]
 spring-framework-bom = { module = "org.springframework:spring-framework-bom", version.ref = "spring-framework" }
+spring-boot-bom = { module = "org.springframework.boot:spring-boot-dependencies", version.ref = "spring-boot"}
 jakarta-ee-bom = { module = "jakarta.platform:jakarta.jakartaee-bom", version.ref = "jakarta-ee" }
 junit-bom = { module = "org.junit:junit-bom", version.ref = "junit" }
