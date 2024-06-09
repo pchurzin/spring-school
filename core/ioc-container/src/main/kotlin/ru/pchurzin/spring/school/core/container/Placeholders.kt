@@ -34,7 +34,7 @@ fun main() {
 @PropertySource("classpath:greeter.properties")
 class GreeterConfig {
     @Bean
-    fun greeter(@Value("\${greeter.message}") greeting: String) = Greeter(greeting)
+    fun greeter(@Value("\${greeter.msg}") greeting: String) = Greeter(greeting)
 }
 
 @Configuration
