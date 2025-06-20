@@ -16,6 +16,7 @@ dependencyResolutionManagement {
 include(":aop:timer")
 include(":boot:app")
 include(":boot:observability")
+include(":boot:weberror")
 include(":core:conversion")
 include(":core:databind")
 include(":core:ioc-container")
