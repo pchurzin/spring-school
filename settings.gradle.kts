@@ -1,5 +1,10 @@
 pluginManagement {
     includeBuild("build-logic")
+    repositories {
+        gradlePluginPortal()
+        mavenCentral()
+        mavenLocal()
+    }
 }
 
 dependencyResolutionManagement {
@@ -10,6 +15,7 @@ dependencyResolutionManagement {
 
 include(":aop:timer")
 include(":boot:app")
+include(":boot:observability")
 include(":core:conversion")
 include(":core:databind")
 include(":core:ioc-container")
