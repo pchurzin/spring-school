@@ -1,0 +1,8 @@
+spring:
+  quartz:
+    job-store-type: jdbc
+    jdbc:
+      initialize-schema: never
+    properties:
+      org.quartz.jobStore.isClustered: true
+      org.quartz.scheduler.instanceId: "AUTO"
