@@ -14,6 +14,7 @@ dependencyResolutionManagement {
 }
 
 include(":aop:timer")
+include(":batch")
 include(":boot:app")
 include(":boot:observability")
 include(":boot:weberror")
