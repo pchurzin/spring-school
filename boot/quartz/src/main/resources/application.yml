@@ -4,5 +4,6 @@ spring:
     jdbc:
       initialize-schema: never
     properties:
+      org.quartz.jobStore.driverDelegateClass: org.quartz.impl.jdbcjobstore.PostgreSQLDelegate
       org.quartz.jobStore.isClustered: true
       org.quartz.scheduler.instanceId: "AUTO"
