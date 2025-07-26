@@ -1,0 +1,10 @@
+databaseChangeLog:
+  - changeSet:
+      id: spring-integration-schema
+      author: Spring Integration Team
+      changes:
+        - sqlFile:
+            path: classpath:org/springframework/integration/jdbc/schema-postgresql.sql
+          rollback:
+            sqlFile:
+              path: classpath:org/springframework/integration/jdbc/schema-drop-postgresql.sql

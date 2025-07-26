@@ -1,0 +1,6 @@
+server:
+   port: -1
+app:
+  prefix: 1234
+  minId: 10
+  maxId: 13
